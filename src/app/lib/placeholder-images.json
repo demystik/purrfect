@@ -1,0 +1,53 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero-dog",
+      "description": "Happy dog in a sunny field",
+      "imageUrl": "https://picsum.photos/seed/purr1/1200/600",
+      "imageHint": "happy dog"
+    },
+    {
+      "id": "hero-cat",
+      "description": "Playful kitten on a soft blanket",
+      "imageUrl": "https://picsum.photos/seed/purr2/1200/600",
+      "imageHint": "cute cat"
+    },
+    {
+      "id": "bella-story",
+      "description": "Bella the dog in her new home",
+      "imageUrl": "https://picsum.photos/seed/purr3/800/600",
+      "imageHint": "rescued dog"
+    },
+    {
+      "id": "team-photo",
+      "description": "Volunteers working at the shelter",
+      "imageUrl": "https://picsum.photos/seed/purr4/800/600",
+      "imageHint": "animal volunteers"
+    },
+    {
+      "id": "pet-1",
+      "description": "Golden Retriever dog",
+      "imageUrl": "https://picsum.photos/seed/dog1/600/400",
+      "imageHint": "golden retriever"
+    },
+    {
+      "id": "pet-2",
+      "description": "Tabby cat sitting by window",
+      "imageUrl": "https://picsum.photos/seed/cat1/600/400",
+      "imageHint": "tabby cat"
+    },
+    {
+      "id": "pet-3",
+      "description": "Black and white puppy",
+      "imageUrl": "https://picsum.photos/seed/dog2/600/400",
+      "imageHint": "border collie puppy"
+    },
+    {
+      "id": "pet-4",
+      "description": "Fluffy ginger cat",
+      "imageUrl": "https://picsum.photos/seed/cat2/600/400",
+      "imageHint": "ginger cat"
+    }
+  ]
+}
