@@ -5,23 +5,23 @@
 
 @layer base {
   :root {
-    --background: 30 100% 97%; /* #FFF6ED Soft Cream */
-    --foreground: 0 0% 18%; /* #2E2E2E Charcoal */
+    --background: 30 30% 94%; /* #F7F1EB Deeper Warm Cream for better contrast */
+    --foreground: 26 30% 15%; /* #31261E Darker Earthy Charcoal */
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 18%;
+    --card-foreground: 26 30% 15%;
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 18%;
+    --popover-foreground: 26 30% 15%;
     --primary: 21 87% 64%; /* #F28C52 Warm Orange */
     --primary-foreground: 0 0% 100%;
     --secondary: 26 30% 33%; /* #6B4F3A Earthy Brown */
     --secondary-foreground: 30 100% 97%;
-    --muted: 30 20% 90%;
+    --muted: 30 20% 88%;
     --muted-foreground: 26 30% 33%;
     --accent: 141 22% 39%; /* #4E7A5D Sage Green */
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 26 30% 33% / 0.1;
+    --border: 26 30% 33% / 0.15;
     --input: 26 30% 33% / 0.2;
     --ring: 21 87% 64%;
     --radius: 0.75rem;
