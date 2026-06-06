@@ -19,7 +19,7 @@ export default function Home() {
       
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative h-[85vh] flex items-center overflow-hidden">
+        <section className="relative min-h-[90vh] py-24 flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <Image 
               src={heroImg?.imageUrl || ""} 
@@ -29,7 +29,7 @@ export default function Home() {
               priority
               data-ai-hint="happy dog"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-secondary/80 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/70 to-transparent" />
           </div>
           
           <div className="container mx-auto px-4 relative z-10">
@@ -41,13 +41,13 @@ export default function Home() {
               <p className="text-xl md:text-2xl font-light opacity-90 leading-relaxed max-w-xl">
                 Purrfect Whiskers is a UK-wide rescue initiative dedicated to finding loving homes for stray and abandoned dogs and cats.
               </p>
-              <div className="flex flex-col sm:row gap-4 pt-4">
+              <div className="flex flex-col sm:flex-row gap-4 pt-6">
                 <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-lg px-8 py-7 rounded-xl shadow-lg">
                   <Link href="/adopt" className="flex items-center gap-2">
                     Meet Our Pets <ArrowRight size={20} />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-secondary text-lg px-8 py-7 rounded-xl">
+                <Button asChild variant="outline" size="lg" className="border-2 border-white/60 text-white hover:bg-white hover:text-secondary text-lg px-8 py-7 rounded-xl backdrop-blur-md bg-white/5 transition-all">
                   <Link href="/match">Find Your Perfect Match</Link>
                 </Button>
               </div>
@@ -115,7 +115,7 @@ export default function Home() {
         {/* Rescue Story Spotlight */}
         <section className="py-24 bg-white overflow-hidden">
           <div className="container mx-auto px-4">
-            <div className="flex flex-col lg:row items-center gap-16">
+            <div className="flex flex-col lg:flex-row items-center gap-16">
               <div className="w-full lg:w-1/2 relative">
                 <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/20 rounded-full blur-3xl" />
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-accent/20 rounded-full blur-3xl" />
@@ -160,7 +160,7 @@ export default function Home() {
                 <p className="text-lg opacity-80">
                   We receive no government funding. Every bowl of food, every medical check, and every rescue mission is powered entirely by donors like you.
                 </p>
-                <div className="flex flex-col sm:row justify-center gap-4">
+                <div className="flex flex-col sm:flex-row justify-center gap-4">
                   <Button asChild size="lg" className="bg-primary hover:bg-primary/90 rounded-full px-12 py-6 text-lg">
                     <Link href="/donate">Donate Now</Link>
                   </Button>
