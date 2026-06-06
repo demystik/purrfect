@@ -48,6 +48,12 @@
       "description": "Fluffy ginger cat",
       "imageUrl": "https://picsum.photos/seed/cat2/600/400",
       "imageHint": "ginger cat"
+    },
+    {
+      "id": "global-app-bg",
+      "description": "Soft blurred background of pets and nature",
+      "imageUrl": "https://picsum.photos/seed/soft-pet-bg/1920/1080",
+      "imageHint": "blurred pets"
     }
   ]
 }
