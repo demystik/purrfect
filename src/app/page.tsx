@@ -17,22 +17,22 @@ export default function Home() {
     <div className="min-h-screen flex flex-col">
       {/* Navbar _________________________________________________  */}
       <Navbar />
-      
+
       <main className="flex-grow">
         {/* Hero Section */}
         <section className="relative min-h-[90vh] py-24 flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
-            <Image 
-              src={heroImg?.imageUrl || ""} 
-              alt="Happy dog" 
-              fill 
+            <Image
+              src={heroImg?.imageUrl || ""}
+              alt="Happy dog"
+              fill
               className="object-cover brightness-75 scale-105"
               priority
               data-ai-hint="happy dog"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/70 to-transparent" />
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-2xl space-y-6 text-white animate-fade-in">
               <Badge className="bg-primary hover:bg-primary px-4 py-1 text-sm font-medium">UK Animal Welfare Initiative</Badge>
@@ -66,7 +66,7 @@ export default function Home() {
                 We believe that every animal has a story worth telling and a life worth saving. From the bustling streets of London to the quiet corners of the Lake District, our team works tirelessly to rescue, rehabilitate, and rehome those in need.
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 { icon: ShieldCheck, title: "Expert Care", desc: "Full veterinary checks, microchipping, and behavioral assessments for every animal." },
@@ -121,12 +121,12 @@ export default function Home() {
                 <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/20 rounded-full blur-3xl" />
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-accent/20 rounded-full blur-3xl" />
                 <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl">
-                  <Image 
-                    src="https://images.unsplash.com/photo-1493101561740-e745892775b2?q=70&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                  <Image
+                    src="https://images.unsplash.com/photo-1694602987137-9832048fa8e5?q=70&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     // src={storyImg?.imageUrl || ""} 
-                    width={800} 
-                    height={600} 
-                    alt="Bella's Story" 
+                    width={800}
+                    height={600}
+                    alt="Bella's Story"
                     className="object-cover"
                     data-ai-hint="happy rescued dog"
                   />
@@ -141,8 +141,14 @@ export default function Home() {
                 <p className="text-muted-foreground leading-relaxed">
                   Bella is just one of the thousands of animals who found their forever families through Purrfect Whiskers. Her transformation is a testament to the power of love, patience, and community support.
                 </p>
-                <Button variant="link" className="text-primary font-bold p-0 flex items-center gap-2 text-lg">
-                  Read More Stories <ArrowRight size={20} />
+                <Button
+                  asChild
+                  variant="link"
+                  className="text-primary font-bold p-0 flex items-center gap-2 text-lg"
+                >
+                  <Link href="/blog">
+                    Read More Stories <ArrowRight size={20} />
+                  </Link>
                 </Button>
               </div>
             </div>
@@ -166,7 +172,7 @@ export default function Home() {
                   <Button asChild size="lg" className="bg-primary hover:bg-primary/90 rounded-full px-12 py-6 text-lg">
                     <Link href="/donate">Donate Now</Link>
                   </Button>
-                  <Button asChild variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/10 rounded-full px-12 py-6 text-lg">
+                  <Button asChild variant="outline" size="lg" className="border-white/20 text-amber-900 hover:bg-white/10 rounded-full px-12 py-6 text-lg">
                     <Link href="/contact">Learn More</Link>
                   </Button>
                 </div>

@@ -17,7 +17,7 @@ const posts = [
     author: "Dr. Sarah Jenkins",
     date: "Oct 24, 2023",
     readTime: "8 min read",
-    image: "https://picsum.photos/seed/blog1/800/600"
+    image: "https://images.unsplash.com/photo-1582456891925-a53965520520?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const posts = [
     author: "Mark Thompson",
     date: "Oct 20, 2023",
     readTime: "6 min read",
-    image: "https://picsum.photos/seed/blog2/800/600"
+    image: "https://images.unsplash.com/photo-1543852786-1cf6624b9987?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const posts = [
     author: "Eleanor Whiske",
     date: "Oct 15, 2023",
     readTime: "12 min read",
-    image: "https://picsum.photos/seed/blog3/800/600"
+    image: "https://images.unsplash.com/photo-1581579186913-45ac3e6efe93?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ const posts = [
     author: "Dr. Sarah Jenkins",
     date: "Oct 10, 2023",
     readTime: "5 min read",
-    image: "https://picsum.photos/seed/blog4/800/600"
+    image: "https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   }
 ];
 
@@ -70,7 +70,7 @@ export default function BlogPage() {
             <Link href="#" className="group">
               <div className="bg-white rounded-[3rem] overflow-hidden shadow-2xl grid grid-cols-1 lg:grid-cols-2">
                 <div className="relative h-96 lg:h-auto">
-                  <Image src="https://picsum.photos/seed/featured/800/600" fill className="object-cover transition-transform duration-700 group-hover:scale-105" alt="Featured Post" />
+                  <Image src="https://images.unsplash.com/photo-1736445786983-d7a6c09fc657?q=80&w=1112&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" fill className="object-cover transition-transform duration-700 group-hover:scale-105" alt="Featured Post" />
                 </div>
                 <div className="p-8 md:p-16 flex flex-col justify-center space-y-6">
                   <Badge className="w-fit bg-primary">Featured Story</Badge>

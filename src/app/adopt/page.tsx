@@ -13,12 +13,13 @@ import { Heart, Search, MapPin, PawPrint, ClipboardCheck, Users, Calendar } from
 import Image from "next/image";
 
 const pets = [
-  { id: 1, name: "Luna", species: "dog", breed: "Golden Retriever", age: "2 years", location: "Manchester", status: "Available", img: "https://picsum.photos/seed/p1/400/300" },
-  { id: 2, name: "Oliver", species: "cat", breed: "British Shorthair", age: "4 years", location: "London", status: "Available", img: "https://picsum.photos/seed/p2/400/300" },
-  { id: 3, name: "Buster", species: "dog", breed: "Border Collie", age: "Puppy", location: "Edinburgh", status: "Fostered", img: "https://picsum.photos/seed/p3/400/300" },
-  { id: 4, name: "Milo", species: "cat", breed: "Tabby", age: "1 year", location: "Bristol", status: "Available", img: "https://picsum.photos/seed/p4/400/300" },
-  { id: 5, name: "Daisy", species: "dog", breed: "Jack Russell", age: "Senior", location: "Cardiff", status: "Available", img: "https://picsum.photos/seed/p5/400/300" },
-  { id: 6, name: "Smokey", species: "cat", breed: "Russian Blue Mix", age: "Kitten", location: "Belfast", status: "Available", img: "https://picsum.photos/seed/p6/400/300" },
+  { id: 1, name: "Luna", species: "dog", breed: "Golden Retriever", age: "2 years", location: "Manchester", status: "Available", img: "https://images.unsplash.com/photo-1582456891925-a53965520520?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { id: 2, name: "Oliver", species: "cat", breed: "British Shorthair", age: "4 years", location: "London", status: "Available", img: "https://images.unsplash.com/photo-1543852786-1cf6624b9987?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { id: 3, name: "Buster", species: "dog", breed: "Border Collie", age: "Puppy", location: "Edinburgh", status: "Fostered", img: "https://images.unsplash.com/photo-1600804340584-c7db2eacf0bf?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { id: 4, name: "Milo", species: "cat", breed: "Tabby", age: "1 year", location: "Bristol", status: "Available", img: "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { id: 5, name: "Daisy", species: "dog", breed: "Jack Russell", age: "Senior", location: "Cardiff", status: "Available", img: "https://images.unsplash.com/photo-1601979031925-424e53b6caaa?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { id: 6, name: "Smokey", species: "cat", breed: "Russian Blue Mix", age: "Kitten", location: "Belfast", status: "Available", img: "https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+  { id: 7, name: "Emily", species: "dog", breed: "Jack Russell", age: "Senior", location: "Cardiff", status: "Available", img: "https://images.unsplash.com/photo-1591160690555-5debfba289f0?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
 ];
 
 export default function AdoptPage() {

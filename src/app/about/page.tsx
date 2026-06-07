@@ -14,7 +14,7 @@ export default function AboutPage() {
         <section className="relative h-[60vh] flex items-center justify-center text-white overflow-hidden">
           <div className="absolute inset-0 z-0">
             <Image 
-              src="https://picsum.photos/seed/about-hero/1200/800" 
+              src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?q=70&w=1286&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
               fill 
               className="object-cover brightness-50" 
               alt="Team with dogs" 
@@ -22,8 +22,8 @@ export default function AboutPage() {
             />
           </div>
           <div className="container mx-auto px-4 relative z-10 text-center space-y-6">
-            <h1 className="text-5xl md:text-7xl font-headline font-bold">The Hearts Behind the Paws</h1>
-            <p className="text-xl max-w-2xl mx-auto opacity-90 leading-relaxed font-light">
+            <h1 className="text-5xl md:text-7xl font-headline font-bold text-[#F28C52]">The Hearts Behind the Paws</h1>
+            <p className="text-xl max-w-2xl mx-auto opacity-100 leading-relaxed font-light">
               We are a passionate collective of animal lovers, veterinarians, and volunteers dedicated to rewriting the stories of UK's abandoned pets.
             </p>
           </div>
@@ -46,12 +46,12 @@ export default function AboutPage() {
               </div>
               <div className="w-full lg:w-1/2 grid grid-cols-2 gap-4">
                 <div className="space-y-4 pt-12">
-                  <div className="h-64 rounded-[2rem] overflow-hidden shadow-xl"><Image src="https://picsum.photos/seed/abt1/400/600" width={400} height={600} className="object-cover h-full" alt="Volunteer" /></div>
-                  <div className="h-48 rounded-[2rem] overflow-hidden shadow-xl"><Image src="https://picsum.photos/seed/abt2/400/400" width={400} height={400} className="object-cover h-full" alt="Rescued pet" /></div>
+                  <div className="h-64 rounded-[2rem] overflow-hidden shadow-xl"><Image src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?q=80&w=715&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width={400} height={600} className="object-cover h-full" alt="Volunteer" /></div>
+                  <div className="h-48 rounded-[2rem] overflow-hidden shadow-xl"><Image src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width={400} height={400} className="object-cover h-full" alt="Rescued pet" /></div>
                 </div>
                 <div className="space-y-4">
-                  <div className="h-48 rounded-[2rem] overflow-hidden shadow-xl"><Image src="https://picsum.photos/seed/abt3/400/400" width={400} height={400} className="object-cover h-full" alt="Dog care" /></div>
-                  <div className="h-64 rounded-[2rem] overflow-hidden shadow-xl"><Image src="https://picsum.photos/seed/abt4/400/600" width={400} height={600} className="object-cover h-full" alt="Kitten" /></div>
+                  <div className="h-48 rounded-[2rem] overflow-hidden shadow-xl"><Image src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width={400} height={400} className="object-cover h-full" alt="Dog care" /></div>
+                  <div className="h-64 rounded-[2rem] overflow-hidden shadow-xl"><Image src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width={400} height={600} className="object-cover h-full" alt="Kitten" /></div>
                 </div>
               </div>
             </div>
@@ -70,7 +70,7 @@ export default function AboutPage() {
               {[
                 { icon: Users, label: "Pets Rehomed", value: "1,248+" },
                 { icon: Heart, label: "Active Volunteers", value: "520+" },
-                { icon: Calendar, label: "Rescues Monthly", value: "45+" },
+                { icon: Calendar, label: "Rescues Monthly", value: "25+" },
                 { icon: Sparkles, label: "Happy Endings", value: "100%" }
               ].map((stat, i) => (
                 <div key={i} className="bg-white/5 border border-white/10 p-10 rounded-[2.5rem] text-center space-y-4 hover:bg-white/10 transition-colors">
@@ -91,14 +91,14 @@ export default function AboutPage() {
               <Badge className="bg-accent">Our Mission</Badge>
               <h3 className="text-3xl font-headline font-bold">To Protect and Serve.</h3>
               <p className="text-muted-foreground leading-relaxed">
-                To provide a sanctuary for all cats and dogs in need, ensuring they receive the medical care, emotional support, and behavioral training required to transition successfully into loving permanent homes.
+                Purrfect Whiskers exists to rescue, rehabilitate, and rehome vulnerable cats and dogs while promoting responsible pet care through education, community support, and compassionate action. We are committed to giving every animal a second chance at a safe, healthy, and loving life.
               </p>
             </div>
             <div className="bg-secondary p-12 rounded-[3rem] text-white space-y-6">
               <Badge className="bg-primary">Our Vision</Badge>
-              <h3 className="text-3xl font-headline font-bold">A World of Respect.</h3>
+              <h3 className="text-3xl font-headline font-bold text-[#F28C52]">A World of Respect.</h3>
               <p className="opacity-80 leading-relaxed">
-                A United Kingdom where every pet is wanted, every owner is responsible, and the cycle of abandonment is broken through public education, proactive rescue, and sustainable welfare practices.
+                To build a world where every cat and dog is valued, protected, and given the opportunity to thrive in a loving home.
               </p>
             </div>
           </div>
