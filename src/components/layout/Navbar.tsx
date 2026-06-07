@@ -2,6 +2,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { PawPrint, Menu, X } from "lucide-react";
 import { useState } from "react";
@@ -14,9 +15,16 @@ export function Navbar() {
     <nav className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-primary/10">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="bg-primary p-1.5 rounded-lg text-white transition-transform group-hover:scale-110">
+          <Image
+            src="/logo.png"
+            alt="Logo"
+            width={70}
+            height={18}
+            className="object-contain"
+          />
+          {/* <div className="bg-primary p-1.5 rounded-lg text-white transition-transform group-hover:scale-110">
             <PawPrint size={24} />
-          </div>
+          </div> */}
           <span className="font-headline font-bold text-xl tracking-tight text-secondary">
             Purrfect <span className="text-primary">Whiskers</span>
           </span>

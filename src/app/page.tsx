@@ -11,10 +11,11 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 export default function Home() {
   const heroImg = PlaceHolderImages.find(img => img.id === 'hero-dog');
-  const storyImg = PlaceHolderImages.find(img => img.id === 'bella-story');
+  const storyImg = PlaceHolderImages.find(img => img.id === 'bella-story',);
 
   return (
     <div className="min-h-screen flex flex-col">
+      {/* Navbar _________________________________________________  */}
       <Navbar />
       
       <main className="flex-grow">
@@ -88,7 +89,7 @@ export default function Home() {
         <section className="py-20 bg-background overflow-hidden">
           <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
             <Link href="/adopt?species=dog" className="group relative h-96 rounded-[2rem] overflow-hidden shadow-2xl">
-              <Image src="https://picsum.photos/seed/home-dog/800/600" fill className="object-cover transition-transform duration-700 group-hover:scale-110" alt="Adopt a Dog" data-ai-hint="happy dog" />
+              <Image src="https://images.unsplash.com/photo-1544568100-847a948585b9?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" fill className="object-cover transition-transform duration-700 group-hover:scale-110" alt="Adopt a Dog" data-ai-hint="happy dog" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
               <div className="absolute bottom-8 left-8 text-white space-y-2">
                 <h3 className="text-3xl font-headline font-bold">Adopt a Dog</h3>
@@ -99,7 +100,7 @@ export default function Home() {
               </div>
             </Link>
             <Link href="/adopt?species=cat" className="group relative h-96 rounded-[2rem] overflow-hidden shadow-2xl">
-              <Image src="https://picsum.photos/seed/home-cat/800/600" fill className="object-cover transition-transform duration-700 group-hover:scale-110" alt="Adopt a Cat" data-ai-hint="cute cat" />
+              <Image src="https://images.unsplash.com/photo-1560114928-40f1f1eb26a0?q=70&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" fill className="object-cover transition-transform duration-700 group-hover:scale-110" alt="Adopt a Cat" data-ai-hint="cute cat" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
               <div className="absolute bottom-8 left-8 text-white space-y-2">
                 <h3 className="text-3xl font-headline font-bold">Adopt a Cat</h3>
@@ -121,7 +122,8 @@ export default function Home() {
                 <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-accent/20 rounded-full blur-3xl" />
                 <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl">
                   <Image 
-                    src={storyImg?.imageUrl || ""} 
+                    src="https://images.unsplash.com/photo-1493101561740-e745892775b2?q=70&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                    // src={storyImg?.imageUrl || ""} 
                     width={800} 
                     height={600} 
                     alt="Bella's Story" 
