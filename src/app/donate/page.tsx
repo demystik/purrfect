@@ -30,7 +30,7 @@ export default function DonatePage() {
       <main className="flex-grow">
         <section className="bg-secondary py-24 text-white text-center">
           <div className="container mx-auto px-4 max-w-3xl space-y-6">
-            <h1 className="text-5xl md:text-6xl font-headline font-bold">Your Kindness <span className="text-primary">Saves Lives</span></h1>
+            <h1 className="text-5xl md:text-6xl font-headline font-bold"><span className="text-white"> Your Kindness</span> <span className="text-primary">Saves Lives</span></h1>
             <p className="text-xl opacity-80 leading-relaxed">
               Purrfect Whiskers relies 100% on the generosity of animal lovers. Your gift directly funds the rescue, care, and rehoming of cats and dogs in the UK.
             </p>
